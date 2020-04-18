@@ -1,3 +1,4 @@
+project(libfdr C)
 set(fdr_src dllist.c jrb.c jval.c)
 
 if (${CMAKE_SYSTEM_NAME} STREQUAL Linux)
