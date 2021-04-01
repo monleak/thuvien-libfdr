@@ -16,6 +16,6 @@ JRB jrb_insert_dbl(JRB tree, double key, Jval val)
 #### Chèn với kiểu jval
 `JRB jrb_insert_gen(JRB tree, Jval key, Jval val, int (*func)(Jval, Jval))`
 > Key với kiểu jval. Cần cung cấp `(*func)(Jval, Jval)` là một hàm so sánh lấy 2 Jval làm đối số và trả về
-   - số âm nếu khóa 1 nhỏ hơn khóa 2
-   - số dương nếu khóa 1 lớn hơn khóa 2
-   - 0 nếu 2 khóa bằng nhau
+>   - số âm nếu khóa 1 nhỏ hơn khóa 2
+>   - số dương nếu khóa 1 lớn hơn khóa 2
+>   - 0 nếu 2 khóa bằng nhau
