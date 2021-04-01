@@ -8,6 +8,7 @@ Just use it as is.
 --------------------------------------------------------------
 # Các lệnh cơ bản của Red black tree
 
+#### Thao tác chèn
 ```
 JRB jrb_insert_str(JRB tree, char *key, Jval val)   //chèn node mới
 JRB jrb_insert_int(JRB tree, int key, Jval val)     //chèn node mới
@@ -37,3 +38,10 @@ extern JRB jrb_find_gte_int(JRB root, int ikey, int *found);
 extern JRB jrb_find_gte_dbl(JRB root, double dkey, int *found);
 extern JRB jrb_find_gte_gen(JRB root, Jval key, int (*func)(Jval, Jval), int *found);
 ```
+#### Xóa node
+`extern void jrb_delete_node(JRB node);`  xóa và giải phóng 1 node
+#### Xóa cây
+`extern void jrb_free_tree(JRB root);`   xóa và giải phóng toàn bộ cây
+#### Đếm số node
+`extern int jrb_nblack(JRB n);`   Trả về số node đen trong đường dẫn từ n đến gốc
+`extern int jrb_nblack(JRB n);`   Trả về số node trong đường dẫn từ n đến gốc
