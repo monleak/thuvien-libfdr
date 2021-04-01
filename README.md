@@ -6,7 +6,7 @@ Original Jim Plank's codes are not touched, and you are not supposed to do so.
 Just use it as is.
 
 --------------------------------------------------------------
-#Các lệnh cơ bản của Red black tree
+# Các lệnh cơ bản của Red black tree
 
 ```
 JRB jrb_insert_str(JRB tree, char *key, Jval val)   //chèn node mới
