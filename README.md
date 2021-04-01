@@ -19,3 +19,21 @@ JRB jrb_insert_dbl(JRB tree, double key, Jval val)
 >   - số âm nếu khóa 1 nhỏ hơn khóa 2
 >   - số dương nếu khóa 1 lớn hơn khóa 2
 >   - 0 nếu 2 khóa bằng nhau
+
+#### Tìm kiếm trong cây
+```
+> Trả về node có giá trị bằng key. Nếu không tìm được thì trả về NULL
+
+extern JRB jrb_find_str(JRB root, char *key);
+extern JRB jrb_find_int(JRB root, int ikey);
+extern JRB jrb_find_dbl(JRB root, double dkey);
+extern JRB jrb_find_gen(JRB root, Jval, int (*func)(Jval, Jval));
+```
+```
+> Trả về node có giá trị bằng key hoặc giá trị nhỏ nhất lớn hơn key. Đặt found=1 nếu tìm thấy khóa, found=0 nếu không tìm thấy
+
+extern JRB jrb_find_gte_str(JRB root, char *key, int *found);
+extern JRB jrb_find_gte_int(JRB root, int ikey, int *found);
+extern JRB jrb_find_gte_dbl(JRB root, double dkey, int *found);
+extern JRB jrb_find_gte_gen(JRB root, Jval key, int (*func)(Jval, Jval), int *found);
+```
