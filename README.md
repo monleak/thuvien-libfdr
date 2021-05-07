@@ -7,7 +7,8 @@ Just use it as is.
 
 --------------------------------------------------------------
 # Các lệnh cơ bản của Red black tree
-####Khởi tạo cây jrb
+
+#### Khởi tạo cây jrb
 ```
 extern JRB make_jrb();
 JRB sub=make_jrb();
