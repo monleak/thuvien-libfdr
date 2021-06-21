@@ -8,6 +8,8 @@ Just use it as is.
 --------------------------------------------------------------
 # Các lệnh cơ bản của Red black tree
 
+Jrb lưu trữ chuỗi theo địa chỉ truyền vào -> nếu free địa chỉ đó thì sẽ mất chuỗi
+
 #### Khởi tạo cây jrb
 ```
 extern JRB make_jrb();
